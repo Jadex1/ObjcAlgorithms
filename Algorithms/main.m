@@ -16,10 +16,9 @@ int main(int argc, const char * argv[])
         // 1). Input "row"
         int row, height;
         scanf("%d", &height);
-        int max_width = height + 1;
         for (row = 0; row < height; row++)
         {
-            printf("%*s", max_width-(row+1), "");
+            printf("%*s", height-(row+1), "");
             for (int i = 0; i < row+1; i++)
             {
                 printf("#");
