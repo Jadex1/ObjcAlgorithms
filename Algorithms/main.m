@@ -9,11 +9,23 @@
 // 1). Input "N".
 #import <Foundation/Foundation.h>
 
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        //
-        NSLog(@"Hello, World!");
+int main(int argc, const char * argv[])
+{
+    @autoreleasepool
+    {
+        // 1). Input "row"
+        int row, height;
+        scanf("%d", &height);
+        int max_width = height + 1;
+        for (row = 0; row < height; row++)
+        {
+            printf("%*s", max_width-(row+1), "");
+            for (int i = 0; i < row+1; i++)
+            {
+                printf("#");
+            }
+            printf("\n");
+        }
     }
     return 0;
 }
