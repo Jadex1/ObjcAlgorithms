@@ -16,7 +16,7 @@ int main(int argc, const char * argv[]) {
     {
         /*---------------------------Input-------------------------------*/
         // Input 1). The length of the Array
-        int lengthOfArray;
+        int lengthOfArray, postiveNumbersCount, negativeNumbersCount, zeroCount;
         // NSLog(@"Hello Human! It's time for another Algorithm! I want you to enter in the Length of the Array as an Int:\n");
         printf("Hello Human! It's time for another Algorithm! I want you to give me the length of the Array as an Int:");
         scanf("%d",&lengthOfArray);
@@ -32,6 +32,25 @@ int main(int argc, const char * argv[]) {
             printf(" %d",array[i]);
         }
         /*-------------------------End Input ----------------------------------*/
+        /*------------------------- Count -------------------------------------*/
+        for (int i = 0; i < lengthOfArray; i++) {
+            
+            if (array[i] > 0) {
+                postiveNumbersCount++;
+            }else if (array[i] < 0){
+                negativeNumbersCount++;
+            } else{
+                zeroCount++;
+            }
+        }
+        printf("The count of postive numbers: %d\n", postiveNumbersCount);
+        printf("The count of negative numbers: %d\n", negativeNumbersCount);
+        printf("The count of zeroes: %d\n", zeroCount);
+        /*-------------------------End Count ---------------------------------*/
+        
+        /*-------------------------Algorithm ---------------------------------*/
+        
+        /*-----------------------End Algorithm -------------------------------*/
         
 //        // Input 2). The entries of the Array.
 //        int i,j,theInput, difference;
