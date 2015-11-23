@@ -17,6 +17,7 @@ int main(int argc, const char * argv[]) {
         /*---------------------------Input-------------------------------*/
         // Input 1). The length of the Array
         int lengthOfArray, postiveNumbersCount, negativeNumbersCount, zeroCount;
+        float fractionPostiveNumbers, fractionNegativeNumbers, fractionZero;
         // NSLog(@"Hello Human! It's time for another Algorithm! I want you to enter in the Length of the Array as an Int:\n");
         printf("Hello Human! It's time for another Algorithm! I want you to give me the length of the Array as an Int:");
         scanf("%d",&lengthOfArray);
@@ -49,6 +50,12 @@ int main(int argc, const char * argv[]) {
         /*-------------------------End Count ---------------------------------*/
         
         /*-------------------------Algorithm ---------------------------------*/
+        fractionPostiveNumbers = ((float)postiveNumbersCount/lengthOfArray);
+        fractionNegativeNumbers = ((float)negativeNumbersCount/lengthOfArray);
+        fractionZero = ((float)zeroCount/lengthOfArray);
+        printf("The value of the postive number fraction:%.3f\n", fractionPostiveNumbers);
+        printf("The value of the negative number fraction:%.3f\n", fractionNegativeNumbers);
+        printf("The value of the zero fraction:%.3f\n", fractionZero);
         
         /*-----------------------End Algorithm -------------------------------*/
         
